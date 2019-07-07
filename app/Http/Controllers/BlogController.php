@@ -10,6 +10,7 @@ class BlogController extends Controller
     public function index(Request $request)
     {
 
-        return view('frontend.index');
+        return view('frontend.index', compact('posts'));
     }
+
 }
